@@ -23,9 +23,22 @@
   /* === FLOWING WAVE TRIANGLE === */
   .triangle-wrap{max-width:920px;margin:0 auto; display:grid; place-items:center}
   .triangle{
-    position:relative; width:min(86vw,780px); aspect-ratio:1/1; border-radius:20px; padding:16px;
-    background:rgba(0,234,255,.04); border:1px solid rgba(0,234,255,.18);
-    overflow:visible;
+    position:relative;
+  width:min(70vw,600px);
+  aspect-ratio:1/1;
+  border-radius:20px;
+  padding:16px;
+  background:rgba(0,234,255,.04);
+  border:1px solid rgba(0,234,255,.18);
+}
+
+.well, .rim {
+  z-index: 0;
+}
+
+.node, .center {
+  z-index: 1;
+}
   }
   /* Clip area to an equilateral triangle */
   .well{
